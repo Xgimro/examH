@@ -1,8 +1,8 @@
-CREATE TABLE material_types ( material_type_id SERIAL PRIMARY KEY UNIQUE, делаем ключ уникальный material_type VARCHAR(100) UNIQUE NOT NULL, варчар макс 100 символов percent_of_loss NUMERIC(4,2) нумерик, (общее колво цифр, скок после запятой) );
+CREATE TABLE material_types ( material_type_id SERIAL PRIMARY KEY UNIQUE, material_type VARCHAR(100) UNIQUE NOT NULL, percent_of_loss NUMERIC(4,2));
 
-CREATE TABLE product_types ( product_type_id SERIAL PRIMARY KEY UNIQUE, product_type VARCHAR(100) UNIQUE NOT NULL, coef_type_product NUMERIC(4,2) );
+CREATE TABLE product_types ( product_type_id SERIAL PRIMARY KEY UNIQUE, product_type VARCHAR(100) UNIQUE NOT NULL, coef_type_product NUMERIC(4,2));
 
-CREATE TABLE products ( product_id SERIAL PRIMARY KEY UNIQUE, product_type_id INT REFERENCES product_types(product_type_id), (ссылаемся на таблицу) product_name VARCHAR(100) UNIQUE NOT NULL, articul INTEGER UNIQUE NOT NULL, min_cost_for_partner NUMERIC(9,2), material_type_id INT REFERENCES material_types(material_type_id) );
+CREATE TABLE products ( product_id SERIAL PRIMARY KEY UNIQUE, product_type_id INT REFERENCES product_types(product_type_id), product_name VARCHAR(100) UNIQUE NOT NULL, articul INTEGER UNIQUE NOT NULL, min_cost_for_partner NUMERIC(9,2), material_type_id INT REFERENCES material_types(material_type_id) );
 
 CREATE TABLE workshops ( workshop_id SERIAL PRIMARY KEY UNIQUE, workshop_name VARCHAR(100) UNIQUE NOT NULL, workshop_type VARCHAR(100) NOT NULL, workshop_members INTEGER );
 
