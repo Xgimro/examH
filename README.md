@@ -23,3 +23,6 @@ CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), 
 не понял нчиего
 
 как сюда фотку добавить ?
+
+
+add file на глайной странице
