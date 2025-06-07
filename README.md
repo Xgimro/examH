@@ -9,3 +9,5 @@ CREATE TABLE workshops ( workshop_id SERIAL PRIMARY KEY UNIQUE, workshop_name VA
 CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), workshop_id INT REFERENCES workshops(workshop_id), time_todo NUMERIC(2,2) NOT NULL );
 
 ТЕМЧИК, НУЖНА ПОМОЩЬ С ЗАВИСИМОСТЯМИ: import/export data -> куда идти, в general, oprions или columns?
+
+в генерал выбираешь файл, в  втором ставишь точку с зпт и двойные ковычки
