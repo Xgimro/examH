@@ -16,3 +16,6 @@ CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), 
 я выбрала файл Прил_В4_КОД и тд, в конце поставили точку с зпт и двойные ковычки, мне выдало ошибку 
 
 а почему ты его вырала, надо файл цсв котоыре появятсья когда ты эксель файлы переделаешь 
+
+ебать я дура 
+смотри, у меня у одной папки product_types, стоит 1, типо public - product_types - product_type character vacying(100) и вот перед этим стот 1, это норм или нет 
