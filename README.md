@@ -7,3 +7,5 @@ CREATE TABLE products ( product_id SERIAL PRIMARY KEY UNIQUE, product_type_id IN
 CREATE TABLE workshops ( workshop_id SERIAL PRIMARY KEY UNIQUE, workshop_name VARCHAR(100) UNIQUE NOT NULL, workshop_type VARCHAR(100) NOT NULL, workshop_members INTEGER );
 
 CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), workshop_id INT REFERENCES workshops(workshop_id), time_todo NUMERIC(2,2) NOT NULL );
+
+ТЕМЧИК, НУЖНА ПОМОЩЬ С ЗАВИСИМОСТЯМИ: import/export data -> куда идти, в general, oprions или columns?
