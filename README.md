@@ -19,3 +19,6 @@ CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), 
 
 ебать я дура 
 смотри, у меня у одной папки product_types, стоит 1, типо public - product_types - product_type character vacying(100) и вот перед этим стот 1, это норм или нет 
+
+
+не понял нчиего
