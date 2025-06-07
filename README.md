@@ -11,3 +11,4 @@ CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), 
 ТЕМЧИК, НУЖНА ПОМОЩЬ С ЗАВИСИМОСТЯМИ: import/export data -> куда идти, в general, oprions или columns?
 
 в генерал выбираешь файл, в  втором ставишь точку с зпт и двойные ковычки
+я выбрала файл Прил_В4_КОД и тд, в конце поставили точку с зпт и двойные ковычки, мне выдало ошибку 
