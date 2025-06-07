@@ -26,4 +26,6 @@ CREATE TABLE product_workshops( product_id INT REFERENCES products(product_id), 
 
 
 add file на глайной странице
+
+
  добавила
